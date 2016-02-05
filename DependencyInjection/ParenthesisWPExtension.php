@@ -1,14 +1,14 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\DependencyInjection;
+namespace Parenthesis\WPBundle\DependencyInjection;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Config\FileLocator;
@@ -18,13 +18,13 @@ use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 /**
- * Class EkinoWordpressExtension.
+ * Class ParenthesisWordpressExtension.
  *
  * This is the bundle Symfony extension class
  *
  * @author Vincent Composieux <composieux@ekino.com>
  */
-class EkinoWordpressExtension extends Extension
+class ParenthesisWPExtension extends Extension
 {
     /**
      * @var array
@@ -53,7 +53,7 @@ class EkinoWordpressExtension extends Extension
     {
         $config = $this->processConfiguration(new Configuration(), $configs);
 
-        $container->setParameter('ekino.wordpress.install_directory', $config['wordpress_directory'] ?: $container->getParameter('kernel.root_dir').'/../../');
+        $container->setParameter('parenthesis.wp.install_directory', $config['wordpress_directory'] ?: $container->getParameter('kernel.root_dir').'/../../');
         $this->loadWordpressGlobals($container, $config['globals']);
 
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
@@ -61,7 +61,7 @@ class EkinoWordpressExtension extends Extension
         $loader->load('services.xml');
         $loader->load('hooks.xml');
 
-        $container->setParameter('ekino.wordpress.repositories', $config['services']);
+        $container->setParameter('parenthesis.wp.repositories', $config['services']);
         $this->loadEntities($container, $config['services']);
         $this->loadManagers($container, $config['services']);
 
@@ -78,7 +78,7 @@ class EkinoWordpressExtension extends Extension
         }
 
         if ($config['i18n_cookie_name']) {
-            $container->setParameter('ekino.wordpress.i18n_cookie_name', $config['i18n_cookie_name']);
+            $container->setParameter('parenthesis.wp.i18n_cookie_name', $config['i18n_cookie_name']);
             $loader->load('i18n.xml');
         }
 
@@ -86,9 +86,9 @@ class EkinoWordpressExtension extends Extension
             $loader->load('listener.xml');
         }
 
-        $container->setParameter('ekino.wordpress.cookie_hash', $config['cookie_hash']);
-        $container->setParameter('ekino.wordpress.firewall_name', $config['security']['firewall_name']);
-        $container->setParameter('ekino.wordpress.login_url', $config['security']['login_url']);
+        $container->setParameter('parenthesis.wp.cookie_hash', $config['cookie_hash']);
+        $container->setParameter('parenthesis.wp.firewall_name', $config['security']['firewall_name']);
+        $container->setParameter('parenthesis.wp.login_url', $config['security']['login_url']);
         $container->setParameter($this->getAlias().'.backend_type_orm', true);
     }
 
@@ -99,7 +99,7 @@ class EkinoWordpressExtension extends Extension
     protected function loadEntities(ContainerBuilder $container, $config)
     {
         foreach (static::$entities as $entityName) {
-            $container->setParameter(sprintf('ekino.wordpress.entity.%s.class', $entityName), $config[$entityName]['class']);
+            $container->setParameter(sprintf('parenthesis.wp.entity.%s.class', $entityName), $config[$entityName]['class']);
         }
     }
 
@@ -110,7 +110,7 @@ class EkinoWordpressExtension extends Extension
     protected function loadManagers(ContainerBuilder $container, $config)
     {
         foreach (static::$entities as $entityName) {
-            $container->setAlias(sprintf('ekino.wordpress.manager.%s', $entityName), $config[$entityName]['manager']);
+            $container->setAlias(sprintf('parenthesis.wp.manager.%s', $entityName), $config[$entityName]['manager']);
         }
     }
 
@@ -122,7 +122,7 @@ class EkinoWordpressExtension extends Extension
      */
     protected function loadTablePrefix(ContainerBuilder $container, $prefix)
     {
-        $identifier = 'ekino.wordpress.subscriber.table_prefix_subscriber';
+        $identifier = 'parenthesis.wp.subscriber.table_prefix_subscriber';
 
         $serviceDefinition = $container->getDefinition($identifier);
         $serviceDefinition->setArguments([$prefix]);
@@ -141,7 +141,7 @@ class EkinoWordpressExtension extends Extension
         $reference = new Reference(sprintf('doctrine.orm.%s_entity_manager', $em));
 
         foreach (static::$entities as $entityName) {
-            $container->findDefinition(sprintf('ekino.wordpress.manager.%s', $entityName))->replaceArgument(0, $reference);
+            $container->findDefinition(sprintf('parenthesis.wp.manager.%s', $entityName))->replaceArgument(0, $reference);
         }
     }
 
@@ -156,7 +156,7 @@ class EkinoWordpressExtension extends Extension
         $coreGlobals = ['wp', 'wp_the_query', 'wpdb', 'wp_query', 'allowedentitynames'];
         $globals = array_merge($globals, $coreGlobals);
 
-        $container->setParameter('ekino.wordpress.globals', $globals);
+        $container->setParameter('parenthesis.wp.globals', $globals);
     }
 
     /**
@@ -166,6 +166,6 @@ class EkinoWordpressExtension extends Extension
      */
     public function getAlias()
     {
-        return 'ekino_wordpress';
+        return 'parenthesis_wp';
     }
 }

@@ -1,19 +1,19 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Tests\Manager;
+namespace Parenthesis\WPBundle\Tests\Manager;
 
 use Doctrine\ORM\AbstractQuery;
 use Doctrine\ORM\EntityManager;
-use Ekino\WordpressBundle\Manager\PostMetaManager;
-use Ekino\WordpressBundle\Repository\PostMetaRepository;
+use Parenthesis\WPBundle\Manager\PostMetaManager;
+use Parenthesis\WPBundle\Repository\PostMetaRepository;
 
 /**
  * Class PostMetaManagerTest.
@@ -43,17 +43,17 @@ class PostMetaManagerTest extends \PHPUnit_Framework_TestCase
     protected function setUp()
     {
         $this->entityManager = $this->getMockBuilder('Doctrine\ORM\EntityManager')->disableOriginalConstructor()->getMock();
-        $this->repository = $this->getMockBuilder('Ekino\WordpressBundle\Repository\PostMetaRepository')->disableOriginalConstructor()->getMock();
+        $this->repository = $this->getMockBuilder('Parenthesis\WPBundle\Repository\PostMetaRepository')->disableOriginalConstructor()->getMock();
         $this->entityManager->expects($this->any())
             ->method('getRepository')
             ->will($this->returnValue($this->repository));
 
-        $this->manager = new PostMetaManager($this->entityManager, 'Ekino\WordpressBundle\Entity\PostMeta');
+        $this->manager = new PostMetaManager($this->entityManager, 'Parenthesis\WPBundle\Entity\PostMeta');
     }
 
     public function testGetPostMetaCollection()
     {
-        $query = $this->getMockBuilder('Ekino\WordpressBundle\Tests\Manager\QueryMock')->disableOriginalConstructor()->getMock();
+        $query = $this->getMockBuilder('Parenthesis\WPBundle\Tests\Manager\QueryMock')->disableOriginalConstructor()->getMock();
         $this->repository->expects($this->once())
             ->method('getPostMetaQuery')
             ->will($this->returnValue($query));

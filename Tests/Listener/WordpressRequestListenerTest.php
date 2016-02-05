@@ -1,16 +1,16 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Tests\Listener;
+namespace Parenthesis\WPBundle\Tests\Listener;
 
-use Ekino\WordpressBundle\Entity\User;
+use Parenthesis\WPBundle\Entity\User;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\Attribute\AttributeBag;
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBag;
@@ -31,12 +31,12 @@ use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 class WordpressRequestListenerTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \Ekino\WordpressBundle\Listener\WordpressRequestListener
+     * @var \Parenthesis\WPBundle\Listener\WordpressRequestListener
      */
     protected $listener;
 
     /**
-     * @var \Ekino\WordpressBundle\Wordpress\Wordpress
+     * @var \Parenthesis\WPBundle\Wordpress\Wordpress
      */
     protected $wordpress;
 
@@ -51,19 +51,19 @@ class WordpressRequestListenerTest extends \PHPUnit_Framework_TestCase
     protected function setUp()
     {
         // Set up a fake User to be returned by UserManager mocked below
-        $userMock = $this->getMock('\Ekino\WordpressBundle\Entity\User', ['getMetaValue']);
+        $userMock = $this->getMock('\Parenthesis\WPBundle\Entity\User', ['getMetaValue']);
         $userMock->expects($this->any())->method('getMetaValue')->will(
             $this->returnValue(serialize(['administrator' => true]))
         );
 
-        $this->wordpress = $this->getMockBuilder('\Ekino\WordpressBundle\Wordpress\Wordpress')
+        $this->wordpress = $this->getMockBuilder('\Parenthesis\WPBundle\Wordpress\Wordpress')
             ->disableOriginalConstructor()
             ->getMock();
 
         $this->tokenStorage = new TokenStorage();
 
         $this->listener = $this->getMock(
-            '\Ekino\WordpressBundle\Listener\WordpressRequestListener',
+            '\Parenthesis\WPBundle\Listener\WordpressRequestListener',
             ['getWordpressLoggedIdentifier'],
             [$this->wordpress, $this->tokenStorage]
         );
@@ -137,7 +137,7 @@ class WordpressRequestListenerTest extends \PHPUnit_Framework_TestCase
 
         $request = new Request();
         $request->setSession($session);
-        $request->attributes->set('_route', 'ekino_wordpress_catchall');
+        $request->attributes->set('_route', 'parenthesis_wp_catchall');
         $request->cookies->set($request->getSession()->getName(), true);
 
         // Ensure Wordpress is loaded as route is not the catch all route.

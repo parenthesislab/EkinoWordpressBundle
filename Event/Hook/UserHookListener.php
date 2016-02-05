@@ -1,17 +1,17 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Event\Hook;
+namespace Parenthesis\WPBundle\Event\Hook;
 
-use Ekino\WordpressBundle\Event\WordpressEvent;
-use Ekino\WordpressBundle\Manager\UserManager;
+use Parenthesis\WPBundle\Event\WordpressEvent;
+use Parenthesis\WPBundle\Manager\UserManager;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
@@ -58,7 +58,7 @@ class UserHookListener
      * @param LoggerInterface       $logger       Symfony PSR logger
      * @param TokenStorageInterface $tokenStorage Symfony security token storage
      * @param SessionInterface      $session      Symfony session service
-     * @param string                $firewall     EkinoWordpressBundle firewall name
+     * @param string                $firewall     ParenthesisWPBundle firewall name
      */
     public function __construct(UserManager $userManager, LoggerInterface $logger, TokenStorageInterface $tokenStorage, SessionInterface $session, $firewall)
     {

@@ -1,17 +1,17 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Twig\Extension;
+namespace Parenthesis\WPBundle\Twig\Extension;
 
-use Ekino\WordpressBundle\Manager\CommentManager;
-use Ekino\WordpressBundle\Model\Comment;
+use Parenthesis\WPBundle\Manager\CommentManager;
+use Parenthesis\WPBundle\Model\Comment;
 
 /**
  * Class CommentExtension.
@@ -42,7 +42,7 @@ class CommentExtension extends \Twig_Extension
      */
     public function getName()
     {
-        return 'ekino_wordpress_comment';
+        return 'parenthesis_wp_comment';
     }
 
     /**

@@ -1,16 +1,16 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Tests\Twig\Extension;
+namespace Parenthesis\WPBundle\Tests\Twig\Extension;
 
-use Ekino\WordpressBundle\Twig\Extension\OptionExtension;
+use Parenthesis\WPBundle\Twig\Extension\OptionExtension;
 
 /**
  * Class OptionExtensionTest.
@@ -35,13 +35,13 @@ class OptionExtensionTest extends \PHPUnit_Framework_TestCase
             $this->markTestSkipped('Twig is not enabled');
         }
 
-        $this->optionManager = $this->getMockBuilder('Ekino\WordpressBundle\Manager\OptionManager')->disableOriginalConstructor()->getMock();
+        $this->optionManager = $this->getMockBuilder('Parenthesis\WPBundle\Manager\OptionManager')->disableOriginalConstructor()->getMock();
         $this->extension = new OptionExtension($this->optionManager);
     }
 
     public function testGetName()
     {
-        $this->assertEquals('ekino_wordpress_option', $this->extension->getName());
+        $this->assertEquals('parenthesis_wp_option', $this->extension->getName());
     }
 
     public function testGetFunctions()
@@ -54,7 +54,7 @@ class OptionExtensionTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetOption()
     {
-        $optionMock = $this->getMock('Ekino\WordpressBundle\Entity\Option');
+        $optionMock = $this->getMock('Parenthesis\WPBundle\Entity\Option');
 
         $this->optionManager->expects($this->once())
             ->method('findOneByOptionName')

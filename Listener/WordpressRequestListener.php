@@ -1,16 +1,16 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Listener;
+namespace Parenthesis\WPBundle\Listener;
 
-use Ekino\WordpressBundle\Wordpress\Wordpress;
+use Parenthesis\WPBundle\Wordpress\Wordpress;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
@@ -56,7 +56,7 @@ class WordpressRequestListener
         $request = $event->getRequest();
 
         // Loads Wordpress source code in order to allow use of WordPress functions in Symfony.
-        if ('ekino_wordpress_catchall' !== $request->attributes->get('_route')) {
+        if ('parenthesis_wp_catchall' !== $request->attributes->get('_route')) {
             $this->wordpress->loadWordpress();
         }
 

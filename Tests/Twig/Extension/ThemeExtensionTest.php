@@ -1,8 +1,8 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -50,9 +50,9 @@ namespace {
     }
 }
 
-namespace Ekino\WordpressBundle\Tests\Twig\Extension {
+namespace Parenthesis\WPBundle\Tests\Twig\Extension {
 
-    use Ekino\WordpressBundle\Twig\Extension\ThemeExtension;
+    use Parenthesis\WPBundle\Twig\Extension\ThemeExtension;
 
     /**
      * Class ThemeExtensionTest.
@@ -83,7 +83,7 @@ namespace Ekino\WordpressBundle\Tests\Twig\Extension {
          */
         public function testGetName()
         {
-            $this->assertEquals('ekino_wordpress_theme', $this->extension->getName());
+            $this->assertEquals('parenthesis_wp_theme', $this->extension->getName());
         }
 
         /**

@@ -1,16 +1,16 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Tests\Event\Hook;
+namespace Parenthesis\WPBundle\Tests\Event\Hook;
 
-use Ekino\WordpressBundle\Event\Hook\UserHookListener;
+use Parenthesis\WPBundle\Event\Hook\UserHookListener;
 
 /**
  * Class UserHookListenerTest.
@@ -20,7 +20,7 @@ use Ekino\WordpressBundle\Event\Hook\UserHookListener;
 class UserHookListenerTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \Ekino\WordpressBundle\Manager\UserManager
+     * @var \Parenthesis\WPBundle\Manager\UserManager
      */
     protected $userManager;
 
@@ -54,7 +54,7 @@ class UserHookListenerTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        $this->userManager = $this->getMockBuilder('Ekino\WordpressBundle\Manager\UserManager')
+        $this->userManager = $this->getMockBuilder('Parenthesis\WPBundle\Manager\UserManager')
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -82,10 +82,10 @@ class UserHookListenerTest extends \PHPUnit_Framework_TestCase
         $wpUser->data = $wpUserData;
         $wpUser->roles = ['administrator'];
 
-        $event = $this->getMock('Ekino\WordpressBundle\Event\WordpressEvent');
+        $event = $this->getMock('Parenthesis\WPBundle\Event\WordpressEvent');
         $event->expects($this->once())->method('getParameter')->will($this->returnValue($wpUser));
 
-        $user = $this->getMock('Ekino\WordpressBundle\Entity\User');
+        $user = $this->getMock('Parenthesis\WPBundle\Entity\User');
         $user->expects($this->once())->method('setWordpressRoles')->with($wpUser->roles);
         $user->expects($this->once())->method('getPass')->will($this->returnValue(1234));
         $user->expects($this->once())->method('getRoles')->will($this->returnValue(['ROLE_WP_ADMINISTRATOR']));
@@ -104,7 +104,7 @@ class UserHookListenerTest extends \PHPUnit_Framework_TestCase
     public function testOnLogout()
     {
         // Given
-        $event = $this->getMock('Ekino\WordpressBundle\Event\WordpressEvent');
+        $event = $this->getMock('Parenthesis\WPBundle\Event\WordpressEvent');
 
         // When - Then
         $this->session->expects($this->once())->method('clear');

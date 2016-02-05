@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-    <entity name="Ekino\WordpressBundle\Entity\TermTaxonomy"
+    <entity name="Parenthesis\WPBundle\Entity\TermTaxonomy"
             table="term_taxonomy"
-            repository-class="Ekino\WordpressBundle\Repository\TermTaxonomyRepository"
+            repository-class="Parenthesis\WPBundle\Repository\TermTaxonomyRepository"
             change-tracking-policy="DEFERRED_IMPLICIT">
 
         <!-- Mapped super classes won't support indexes -->
@@ -20,13 +20,13 @@
             </options>
         </id>
 
-        <one-to-many target-entity="Ekino\WordpressBundle\Entity\TermRelationships" mapped-by="taxonomy" field="relationships" />
+        <one-to-many target-entity="Parenthesis\WPBundle\Entity\TermRelationships" mapped-by="taxonomy" field="relationships" />
 
-        <many-to-one field="term" target-entity="Ekino\WordpressBundle\Entity\Term" inversed-by="taxonomies">
+        <many-to-one field="term" target-entity="Parenthesis\WPBundle\Entity\Term" inversed-by="taxonomies">
             <join-column name="term_id" referenced-column-name="term_id" nullable="false" />
         </many-to-one>
 
-        <many-to-one field="parent" target-entity="Ekino\WordpressBundle\Entity\Term">
+        <many-to-one field="parent" target-entity="Parenthesis\WPBundle\Entity\Term">
             <join-column name="parent" referenced-column-name="term_id" nullable="false" />
         </many-to-one>
     </entity>

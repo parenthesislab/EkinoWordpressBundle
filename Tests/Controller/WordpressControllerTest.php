@@ -1,14 +1,14 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Tests\Controller;
+namespace Parenthesis\WPBundle\Tests\Controller;
 
 /**
  * Class WordpressControllerTest.
@@ -22,7 +22,7 @@ class WordpressControllerTest extends \PHPUnit_Framework_TestCase
     protected $wp_query;
 
     /**
-     * @var \Ekino\WordpressBundle\Wordpress\Wordpress
+     * @var \Parenthesis\WPBundle\Wordpress\Wordpress
      */
     protected $wordpress;
 
@@ -46,24 +46,24 @@ class WordpressControllerTest extends \PHPUnit_Framework_TestCase
      */
     public function testCatchAllAction()
     {
-        $controller = $this->getMock('\Ekino\WordpressBundle\Controller\WordpressController', ['getWordpress']);
+        $controller = $this->getMock('\Parenthesis\WPBundle\Controller\WordpressController', ['getWordpress']);
         $controller->expects($this->any())->method('getWordpress')->will($this->returnValue($this->wordpress));
 
         $response = $controller->catchAllAction();
 
-        $this->assertInstanceOf('\Ekino\WordpressBundle\Wordpress\WordpressResponse', $response, 'Should returns a WordpressResponse instance');
+        $this->assertInstanceOf('\Parenthesis\WPBundle\Wordpress\WordpressResponse', $response, 'Should returns a WordpressResponse instance');
     }
 
     /**
      * Returns a mock of Wordpress class.
      *
-     * @return \Ekino\WordpressBundle\Wordpress\Wordpress
+     * @return \Parenthesis\WPBundle\Wordpress\Wordpress
      */
     protected function getWordpressMock()
     {
         $kernel = $this->getKernelMock();
 
-        return $this->getMock('\Ekino\WordpressBundle\Wordpress\Wordpress', ['getContent'], [$kernel, ['wp_test_global1', 'wp_test_global2']]);
+        return $this->getMock('\Parenthesis\WPBundle\Wordpress\Wordpress', ['getContent'], [$kernel, ['wp_test_global1', 'wp_test_global2']]);
     }
 
     /**

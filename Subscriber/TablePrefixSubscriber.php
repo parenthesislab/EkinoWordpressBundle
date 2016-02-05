@@ -1,14 +1,14 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Subscriber;
+namespace Parenthesis\WPBundle\Subscriber;
 
 use Doctrine\Common\EventSubscriber;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
@@ -63,7 +63,7 @@ class TablePrefixSubscriber implements EventSubscriber
             return;
         }
 
-        if ($classMetadata->getReflectionClass() && $classMetadata->getReflectionClass()->implementsInterface('Ekino\\WordpressBundle\\Model\\WordpressEntityInterface')) {
+        if ($classMetadata->getReflectionClass() && $classMetadata->getReflectionClass()->implementsInterface('Parenthesis\\WPBundle\\Model\\WordpressEntityInterface')) {
             $classMetadata->setPrimaryTable(['name' => $this->prefix.$classMetadata->getTableName()]);
 
             foreach ($classMetadata->getAssociationMappings() as $fieldName => $mapping) {

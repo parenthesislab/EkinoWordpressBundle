@@ -1,14 +1,14 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Controller;
+namespace Parenthesis\WPBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -24,7 +24,7 @@ class WordpressController extends Controller
     /**
      * Wordpress catch-all route action.
      *
-     * @return \Ekino\WordpressBundle\Wordpress\WordpressResponse
+     * @return \Parenthesis\WPBundle\Wordpress\WordpressResponse
      */
     public function catchAllAction()
     {
@@ -34,10 +34,10 @@ class WordpressController extends Controller
     /**
      * Returns Wordpress service.
      *
-     * @return \Ekino\WordpressBundle\Wordpress\Wordpress
+     * @return \Parenthesis\WPBundle\Wordpress\Wordpress
      */
     protected function getWordpress()
     {
-        return $this->get('ekino.wordpress.wordpress');
+        return $this->get('parenthesis.wp.wordpress');
     }
 }

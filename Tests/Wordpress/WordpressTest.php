@@ -1,16 +1,16 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Tests\Wordpress;
+namespace Parenthesis\WPBundle\Tests\Wordpress;
 
-use Ekino\WordpressBundle\Wordpress\Wordpress;
+use Parenthesis\WPBundle\Wordpress\Wordpress;
 
 /**
  * Class WordpressTest.
@@ -22,7 +22,7 @@ use Ekino\WordpressBundle\Wordpress\Wordpress;
 class WordpressTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \Ekino\WordpressBundle\Wordpress\Wordpress
+     * @var \Parenthesis\WPBundle\Wordpress\Wordpress
      */
     protected $wordpress;
 
@@ -70,7 +70,7 @@ class WordpressTest extends \PHPUnit_Framework_TestCase
 
         $response = $this->wordpress->getResponse();
 
-        $this->assertInstanceOf('\Ekino\WordpressBundle\Wordpress\WordpressResponse', $response, 'Should return a WordpressResponse instance');
+        $this->assertInstanceOf('\Parenthesis\WPBundle\Wordpress\WordpressResponse', $response, 'Should return a WordpressResponse instance');
         $this->assertEquals($this->content, $response->getContent(), 'Wordpress content should be returned');
     }
 
@@ -100,10 +100,10 @@ class WordpressTest extends \PHPUnit_Framework_TestCase
     /**
      * Returns a mock of Wordpress class.
      *
-     * @return \Ekino\WordpressBundle\Wordpress\Wordpress
+     * @return \Parenthesis\WPBundle\Wordpress\Wordpress
      */
     protected function getWordpressMock()
     {
-        return $this->getMock('\Ekino\WordpressBundle\Wordpress\Wordpress', ['getContent'], [__DIR__, ['wp_test_global1', 'wp_test_global2']]);
+        return $this->getMock('\Parenthesis\WPBundle\Wordpress\Wordpress', ['getContent'], [__DIR__, ['wp_test_global1', 'wp_test_global2']]);
     }
 }

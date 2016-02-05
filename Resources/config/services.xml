@@ -8,14 +8,14 @@
 
         <!-- Services -->
 
-        <service id="ekino.wordpress.wordpress" class="Ekino\WordpressBundle\Wordpress\Wordpress">
-            <argument>%ekino.wordpress.install_directory%</argument>
-            <argument>%ekino.wordpress.globals%</argument>
+        <service id="parenthesis.wp.wordpress" class="Parenthesis\WPBundle\Wordpress\Wordpress">
+            <argument>%parenthesis.wp.install_directory%</argument>
+            <argument>%parenthesis.wp.globals%</argument>
         </service>
 
         <!-- Subscribers -->
 
-        <service id="ekino.wordpress.subscriber.table_prefix_subscriber" class="Ekino\WordpressBundle\Subscriber\TablePrefixSubscriber">
+        <service id="parenthesis.wp.subscriber.table_prefix_subscriber" class="Parenthesis\WPBundle\Subscriber\TablePrefixSubscriber">
             <tag name="doctrine.event_subscriber" />
 
             <argument />
@@ -23,8 +23,8 @@
 
         <!-- Security -->
 
-        <service id="ekino.wordpress.security.entry_point" class="Ekino\WordpressBundle\Security\WordpressEntryPoint" public="true">
-            <argument>%ekino.wordpress.login_url%</argument>
+        <service id="parenthesis.wp.security.entry_point" class="Parenthesis\WPBundle\Security\WordpressEntryPoint" public="true">
+            <argument>%parenthesis.wp.login_url%</argument>
         </service>
     </services>
 </container>

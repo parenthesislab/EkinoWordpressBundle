@@ -1,17 +1,17 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Twig\Extension;
+namespace Parenthesis\WPBundle\Twig\Extension;
 
-use Ekino\WordpressBundle\Entity\Post;
-use Ekino\WordpressBundle\Manager\PostManager;
+use Parenthesis\WPBundle\Entity\Post;
+use Parenthesis\WPBundle\Manager\PostManager;
 
 /**
  * Class PostExtension.
@@ -52,7 +52,7 @@ class PostExtension extends \Twig_Extension
      */
     public function getName()
     {
-        return 'ekino_wordpress_post';
+        return 'parenthesis_wp_post';
     }
 
     /**

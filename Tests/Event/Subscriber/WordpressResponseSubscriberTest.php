@@ -1,16 +1,16 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Tests\Event\Subscriber;
+namespace Parenthesis\WPBundle\Tests\Event\Subscriber;
 
-use Ekino\WordpressBundle\Event\Subscriber\WordpressResponseSubscriber;
+use Parenthesis\WPBundle\Event\Subscriber\WordpressResponseSubscriber;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\KernelEvents;
 
@@ -28,8 +28,8 @@ class WordpressResponseSubscriberTest extends \PHPUnit_Framework_TestCase
     protected function setUp()
     {
         $this->event = $this->getMockBuilder('Symfony\Component\HttpKernel\Event\FilterResponseEvent')->disableOriginalConstructor()->getMock();
-        $this->response = $this->getMockBuilder('Ekino\WordpressBundle\Wordpress\WordpressResponse')->disableOriginalConstructor()->getMock();
-        $this->wordpress = $this->getMockBuilder('Ekino\WordpressBundle\Wordpress\Wordpress')->disableOriginalConstructor()->getMock();
+        $this->response = $this->getMockBuilder('Parenthesis\WPBundle\Wordpress\WordpressResponse')->disableOriginalConstructor()->getMock();
+        $this->wordpress = $this->getMockBuilder('Parenthesis\WPBundle\Wordpress\Wordpress')->disableOriginalConstructor()->getMock();
 
         $this->subscriber = new WordpressResponseSubscriber($this->wordpress);
     }

@@ -1,19 +1,19 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Tests\Entity;
+namespace Parenthesis\WPBundle\Tests\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use Ekino\WordpressBundle\Entity\Post;
-use Ekino\WordpressBundle\Entity\PostMeta;
-use Ekino\WordpressBundle\Entity\User;
+use Parenthesis\WPBundle\Entity\Post;
+use Parenthesis\WPBundle\Entity\PostMeta;
+use Parenthesis\WPBundle\Entity\User;
 
 /**
  * Class PostTest.

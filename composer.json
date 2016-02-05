@@ -1,14 +1,16 @@
 {
-    "name": "ekino/wordpress-bundle",
+    "name": "parenthesis/wp-bundle",
     "type": "symfony-bundle",
     "description": "A Symfony bundle to link Symfony with Wordpress",
-    "keywords": ["ekino", "bundle", "symfony", "wordpress"],
-    "homepage": "http://github.com/ekino/EkinoWordpressBundle",
+    "keywords": ["parenthesis", "bundle", "symfony", "wordpress"],
+    "homepage": "https://github.com/parenthesislab/ParenthesisWPBundle",
     "license": "MIT",
     "authors": [
         {
-            "name": "Vincent Composieux",
-            "email": "composieux@ekino.com"
+            "name": "Leroy Ley Loredo",
+            "email": "lele140686@gmail.com",
+            "name": "Elvis Morales",
+            "email": "elvismdev@gmail.com"
         }
     ],
     "require": {
@@ -24,7 +26,7 @@
         "twig/twig": ""
     },
     "autoload": {
-        "psr-4": { "Ekino\\WordpressBundle\\": "" }
+        "psr-4": { "Parenthesis\\WPBundle\\": "" }
     },
     "extra": {
         "branch-alias": {

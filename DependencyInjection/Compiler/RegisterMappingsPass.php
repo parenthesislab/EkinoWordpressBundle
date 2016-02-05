@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\DependencyInjection\Compiler;
+namespace Parenthesis\WPBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -95,7 +95,7 @@ class RegisterMappingsPass implements CompilerPassInterface
      */
     protected function getChainDriverServiceName(ContainerBuilder $container)
     {
-        foreach (['ekino_wordpress.model_manager_name', $this->fallbackManagerParameter] as $param) {
+        foreach (['parenthesis_wp.model_manager_name', $this->fallbackManagerParameter] as $param) {
             if ($container->hasParameter($param)) {
                 $name = $container->getParameter($param);
                 if ($name) {
@@ -118,6 +118,6 @@ class RegisterMappingsPass implements CompilerPassInterface
         $locator = new Definition('Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator', $arguments);
         $driver = new Definition('Doctrine\ORM\Mapping\Driver\XmlDriver', [$locator]);
 
-        return new self($driver, 'doctrine.orm.%s_metadata_driver', $mappings, 'ekino_wordpress.backend_type_orm', 'doctrine.default_entity_manager');
+        return new self($driver, 'doctrine.orm.%s_metadata_driver', $mappings, 'parenthesis_wp.backend_type_orm', 'doctrine.default_entity_manager');
     }
 }

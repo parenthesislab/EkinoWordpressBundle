@@ -8,10 +8,10 @@
 
         <!-- Listeners -->
 
-        <service id="ekino.wordpress.listener.wordpress_request" class="Ekino\WordpressBundle\Listener\WordpressRequestListener" public="true">
+        <service id="parenthesis.wp.listener.wordpress_request" class="Parenthesis\WPBundle\Listener\WordpressRequestListener" public="true">
             <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" />
 
-            <argument type="service" id="ekino.wordpress.wordpress" />
+            <argument type="service" id="parenthesis.wp.wordpress" />
             <argument type="service" id="security.token_storage" />
         </service>
 

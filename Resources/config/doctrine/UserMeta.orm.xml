@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-    <entity name="Ekino\WordpressBundle\Entity\UserMeta"
+    <entity name="Parenthesis\WPBundle\Entity\UserMeta"
             table="usermeta"
-            repository-class="Ekino\WordpressBundle\Repository\UserMetaRepository"
+            repository-class="Parenthesis\WPBundle\Repository\UserMetaRepository"
             change-tracking-policy="DEFERRED_IMPLICIT">
 
         <!-- Mapped super classes won't support indexes -->
@@ -18,7 +18,7 @@
             </options>
         </id>
 
-        <many-to-one field="user" target-entity="Ekino\WordpressBundle\Entity\User" inversed-by="metas">
+        <many-to-one field="user" target-entity="Parenthesis\WPBundle\Entity\User" inversed-by="metas">
             <join-column name="user_id" referenced-column-name="ID" />
         </many-to-one>
 

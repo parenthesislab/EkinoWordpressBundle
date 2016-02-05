@@ -1,18 +1,18 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Manager;
+namespace Parenthesis\WPBundle\Manager;
 
-use Ekino\WordpressBundle\Entity\Post;
-use Ekino\WordpressBundle\Entity\PostMeta;
-use Ekino\WordpressBundle\Repository\PostMetaRepository;
+use Parenthesis\WPBundle\Entity\Post;
+use Parenthesis\WPBundle\Entity\PostMeta;
+use Parenthesis\WPBundle\Repository\PostMetaRepository;
 
 /**
  * Class PostMetaManager.
@@ -33,7 +33,7 @@ class PostMetaManager extends BaseManager
      * @param string $metaName       A meta name
      * @param bool   $fetchOneResult Use fetchOneOrNullResult() method instead of getResult()?
      *
-     * @return array|\Ekino\WordpressBundle\Entity\PostMeta
+     * @return array|\Parenthesis\WPBundle\Entity\PostMeta
      */
     public function getPostMeta($postId, $metaName, $fetchOneResult = false)
     {

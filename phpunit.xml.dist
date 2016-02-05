@@ -12,7 +12,7 @@
          bootstrap="Tests/bootstrap.php"
         >
     <testsuites>
-        <testsuite name="Ekino\WordpressBundle">
+        <testsuite name="Parenthesis\WPBundle">
             <directory>./Tests</directory>
         </testsuite>
     </testsuites>

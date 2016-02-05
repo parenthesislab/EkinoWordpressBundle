@@ -1,16 +1,16 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Tests\Twig\Extension;
+namespace Parenthesis\WPBundle\Tests\Twig\Extension;
 
-use Ekino\WordpressBundle\Twig\Extension\PostExtension;
+use Parenthesis\WPBundle\Twig\Extension\PostExtension;
 
 class PostExtensionTest extends \PHPUnit_Framework_TestCase
 {
@@ -28,15 +28,15 @@ class PostExtensionTest extends \PHPUnit_Framework_TestCase
             $this->markTestSkipped('Twig is not enabled');
         }
 
-        $this->postManager = $this->getMockBuilder('Ekino\WordpressBundle\Manager\PostManager')->disableOriginalConstructor()->getMock();
-        $this->optionExtension = $this->getMockBuilder('Ekino\WordpressBundle\Twig\Extension\OptionExtension')->disableOriginalConstructor()->getMock();
+        $this->postManager = $this->getMockBuilder('Parenthesis\WPBundle\Manager\PostManager')->disableOriginalConstructor()->getMock();
+        $this->optionExtension = $this->getMockBuilder('Parenthesis\WPBundle\Twig\Extension\OptionExtension')->disableOriginalConstructor()->getMock();
 
         $this->postExtension = new PostExtension($this->postManager, $this->optionExtension);
     }
 
     public function testGetName()
     {
-        $this->assertEquals('ekino_wordpress_post', $this->postExtension->getName());
+        $this->assertEquals('parenthesis_wp_post', $this->postExtension->getName());
     }
 
     public function testGetFunctions()
@@ -47,7 +47,7 @@ class PostExtensionTest extends \PHPUnit_Framework_TestCase
     public function testReplacePostArguments()
     {
         $permalinkStructure = '/%year%/%monthnum%/%day%/%post_id%-%postname%';
-        $post = $this->getMock('Ekino\WordpressBundle\Entity\Post');
+        $post = $this->getMock('Parenthesis\WPBundle\Entity\Post');
         $post->expects($this->once())
             ->method('getDate')
             ->will($this->returnValue(new \DateTime()));
@@ -75,8 +75,8 @@ class PostExtensionTest extends \PHPUnit_Framework_TestCase
 
     public function testGetPermalink()
     {
-        $post = $this->getMock('Ekino\WordpressBundle\Entity\Post');
-        $permalinkOption = $this->getMock('Ekino\WordpressBundle\Entity\Option');
+        $post = $this->getMock('Parenthesis\WPBundle\Entity\Post');
+        $permalinkOption = $this->getMock('Parenthesis\WPBundle\Entity\Option');
 
         $post->expects($this->once())
             ->method('getDate')
@@ -104,9 +104,9 @@ class PostExtensionTest extends \PHPUnit_Framework_TestCase
 
     public function testGetAbsolutePermalink()
     {
-        $post = $this->getMock('Ekino\WordpressBundle\Entity\Post');
-        $permalinkOption = $this->getMock('Ekino\WordpressBundle\Entity\Option');
-        $homeOption = $this->getMock('Ekino\WordpressBundle\Entity\Option');
+        $post = $this->getMock('Parenthesis\WPBundle\Entity\Post');
+        $permalinkOption = $this->getMock('Parenthesis\WPBundle\Entity\Option');
+        $homeOption = $this->getMock('Parenthesis\WPBundle\Entity\Option');
 
         $post->expects($this->once())
             ->method('getDate')

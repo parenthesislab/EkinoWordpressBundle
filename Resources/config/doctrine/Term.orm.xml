@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-    <entity name="Ekino\WordpressBundle\Entity\Term"
+    <entity name="Parenthesis\WPBundle\Entity\Term"
             table="terms"
-            repository-class="Ekino\WordpressBundle\Repository\TermRepository"
+            repository-class="Parenthesis\WPBundle\Repository\TermRepository"
             change-tracking-policy="DEFERRED_IMPLICIT">
 
         <!-- Mapped super classes won't support indexes -->
@@ -18,6 +18,6 @@
             </options>
         </id>
 
-        <one-to-many field="taxonomies" target-entity="Ekino\WordpressBundle\Entity\TermTaxonomy" mapped-by="term" />
+        <one-to-many field="taxonomies" target-entity="Parenthesis\WPBundle\Entity\TermTaxonomy" mapped-by="term" />
     </entity>
 </doctrine-mapping>

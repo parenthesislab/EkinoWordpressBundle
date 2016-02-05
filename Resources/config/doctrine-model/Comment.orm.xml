@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-    <mapped-superclass name="Ekino\WordpressBundle\Model\Comment">
+    <mapped-superclass name="Parenthesis\WPBundle\Model\Comment">
         <field name="author" type="string" length="255" column="comment_author" />
         <field name="authorEmail" type="string" length="100" column="comment_author_email">
             <options>

@@ -1,16 +1,16 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Twig\Extension;
+namespace Parenthesis\WPBundle\Twig\Extension;
 
-use Ekino\WordpressBundle\Manager\PostMetaManager;
+use Parenthesis\WPBundle\Manager\PostMetaManager;
 
 /**
  * Class PostMetaExtension.
@@ -39,7 +39,7 @@ class PostMetaExtension extends \Twig_Extension
      */
     public function getName()
     {
-        return 'ekino_wordpress_post_meta';
+        return 'parenthesis_wp_post_meta';
     }
 
     /**
@@ -58,7 +58,7 @@ class PostMetaExtension extends \Twig_Extension
      * @param string $metaName       A meta name
      * @param bool   $fetchOneResult Use fetchOneOrNullResult() method instead of getResult()?
      *
-     * @return array|\Ekino\WordpressBundle\Entity\PostMeta
+     * @return array|\Parenthesis\WPBundle\Entity\PostMeta
      */
     public function getPostMeta($postId, $metaName, $fetchOneResult = false)
     {

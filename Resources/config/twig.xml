@@ -5,48 +5,48 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="ekino.wordpress.twig.extension.comment.class">Ekino\WordpressBundle\Twig\Extension\CommentExtension</parameter>
-        <parameter key="ekino.wordpress.twig.extension.option.class">Ekino\WordpressBundle\Twig\Extension\OptionExtension</parameter>
-        <parameter key="ekino.wordpress.twig.extension.post.class">Ekino\WordpressBundle\Twig\Extension\PostExtension</parameter>
-        <parameter key="ekino.wordpress.twig.extension.post_meta.class">Ekino\WordpressBundle\Twig\Extension\PostMetaExtension</parameter>
-        <parameter key="ekino.wordpress.twig.extension.term_taxonomy.class">Ekino\WordpressBundle\Twig\Extension\TermTaxonomyExtension</parameter>
-        <parameter key="ekino.wordpress.twig.extension.theme.class">Ekino\WordpressBundle\Twig\Extension\ThemeExtension</parameter>
+        <parameter key="parenthesis.wp.twig.extension.comment.class">Parenthesis\WPBundle\Twig\Extension\CommentExtension</parameter>
+        <parameter key="parenthesis.wp.twig.extension.option.class">Parenthesis\WPBundle\Twig\Extension\OptionExtension</parameter>
+        <parameter key="parenthesis.wp.twig.extension.post.class">Parenthesis\WPBundle\Twig\Extension\PostExtension</parameter>
+        <parameter key="parenthesis.wp.twig.extension.post_meta.class">Parenthesis\WPBundle\Twig\Extension\PostMetaExtension</parameter>
+        <parameter key="parenthesis.wp.twig.extension.term_taxonomy.class">Parenthesis\WPBundle\Twig\Extension\TermTaxonomyExtension</parameter>
+        <parameter key="parenthesis.wp.twig.extension.theme.class">Parenthesis\WPBundle\Twig\Extension\ThemeExtension</parameter>
     </parameters>
 
     <services>
-        <service id="ekino.wordpress.twig.extension.comment" class="%ekino.wordpress.twig.extension.comment.class%">
+        <service id="parenthesis.wp.twig.extension.comment" class="%parenthesis.wp.twig.extension.comment.class%">
             <tag name="twig.extension" />
 
-            <argument type="service" id="ekino.wordpress.manager.comment" />
+            <argument type="service" id="parenthesis.wp.manager.comment" />
         </service>
 
-        <service id="ekino.wordpress.twig.extension.option" class="%ekino.wordpress.twig.extension.option.class%">
+        <service id="parenthesis.wp.twig.extension.option" class="%parenthesis.wp.twig.extension.option.class%">
             <tag name="twig.extension" />
 
-            <argument type="service" id="ekino.wordpress.manager.option" />
+            <argument type="service" id="parenthesis.wp.manager.option" />
         </service>
 
-        <service id="ekino.wordpress.twig.extension.post" class="%ekino.wordpress.twig.extension.post.class%">
+        <service id="parenthesis.wp.twig.extension.post" class="%parenthesis.wp.twig.extension.post.class%">
             <tag name="twig.extension" />
 
-            <argument type="service" id="ekino.wordpress.manager.post" />
-            <argument type="service" id="ekino.wordpress.twig.extension.option" />
-            <argument>%ekino.wordpress.cookie_hash%</argument>
+            <argument type="service" id="parenthesis.wp.manager.post" />
+            <argument type="service" id="parenthesis.wp.twig.extension.option" />
+            <argument>%parenthesis.wp.cookie_hash%</argument>
         </service>
 
-        <service id="ekino.wordpress.twig.extension.post_meta" class="%ekino.wordpress.twig.extension.post_meta.class%">
+        <service id="parenthesis.wp.twig.extension.post_meta" class="%parenthesis.wp.twig.extension.post_meta.class%">
             <tag name="twig.extension" />
 
-            <argument type="service" id="ekino.wordpress.manager.post_meta" />
+            <argument type="service" id="parenthesis.wp.manager.post_meta" />
         </service>
 
-        <service id="ekino.wordpress.twig.extension.term_taxonomy" class="%ekino.wordpress.twig.extension.term_taxonomy.class%">
+        <service id="parenthesis.wp.twig.extension.term_taxonomy" class="%parenthesis.wp.twig.extension.term_taxonomy.class%">
             <tag name="twig.extension" />
 
-            <argument type="service" id="ekino.wordpress.manager.option" />
+            <argument type="service" id="parenthesis.wp.manager.option" />
         </service>
 
-        <service id="ekino.wordpress.twig.extension.theme" class="%ekino.wordpress.twig.extension.theme.class%">
+        <service id="parenthesis.wp.twig.extension.theme" class="%parenthesis.wp.twig.extension.theme.class%">
             <tag name="twig.extension" />
         </service>
 

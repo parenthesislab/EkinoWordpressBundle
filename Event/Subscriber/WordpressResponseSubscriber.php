@@ -1,17 +1,17 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Event\Subscriber;
+namespace Parenthesis\WPBundle\Event\Subscriber;
 
-use Ekino\WordpressBundle\Wordpress\Wordpress;
-use Ekino\WordpressBundle\Wordpress\WordpressResponse;
+use Parenthesis\WPBundle\Wordpress\Wordpress;
+use Parenthesis\WPBundle\Wordpress\WordpressResponse;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
 use Symfony\Component\HttpKernel\HttpKernelInterface;

@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f7b24aba-e32c-43ff-a561-6851e51cdd4c" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/EkinoWordpressBundle.php" afterPath="$PROJECT_DIR$/ParenthesisWPBundle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/BaseManager.php" afterPath="$PROJECT_DIR$/Manager/BaseManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine/Comment.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine/Comment.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine-model/Comment.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine-model/Comment.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Entity/Comment.php" afterPath="$PROJECT_DIR$/Entity/Comment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Comment.php" afterPath="$PROJECT_DIR$/Model/Comment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Twig/Extension/CommentExtension.php" afterPath="$PROJECT_DIR$/Twig/Extension/CommentExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/CommentManager.php" afterPath="$PROJECT_DIR$/Manager/CommentManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine/CommentMeta.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine/CommentMeta.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine-model/CommentMeta.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine-model/CommentMeta.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Entity/CommentMeta.php" afterPath="$PROJECT_DIR$/Entity/CommentMeta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/CommentMeta.php" afterPath="$PROJECT_DIR$/Model/CommentMeta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/CommentMetaManager.php" afterPath="$PROJECT_DIR$/Manager/CommentMetaManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/CommentMetaRepository.php" afterPath="$PROJECT_DIR$/Repository/CommentMetaRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Entity/CommentMetaTest.php" afterPath="$PROJECT_DIR$/Tests/Entity/CommentMetaTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/CommentRepository.php" afterPath="$PROJECT_DIR$/Repository/CommentRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Entity/CommentTest.php" afterPath="$PROJECT_DIR$/Tests/Entity/CommentTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DependencyInjection/Configuration.php" afterPath="$PROJECT_DIR$/DependencyInjection/Configuration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DependencyInjection/EkinoWordpressExtension.php" afterPath="$PROJECT_DIR$/DependencyInjection/EkinoWordpressExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Event/Subscriber/I18n/I18nSubscriber.php" afterPath="$PROJECT_DIR$/Event/Subscriber/I18n/I18nSubscriber.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Event/Subscriber/I18n/I18nSubscriberTest.php" afterPath="$PROJECT_DIR$/Tests/Event/Subscriber/I18n/I18nSubscriberTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine/Link.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine/Link.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine-model/Link.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine-model/Link.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Entity/Link.php" afterPath="$PROJECT_DIR$/Entity/Link.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Link.php" afterPath="$PROJECT_DIR$/Model/Link.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/LinkManager.php" afterPath="$PROJECT_DIR$/Manager/LinkManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/LinkRepository.php" afterPath="$PROJECT_DIR$/Repository/LinkRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Entity/LinkTest.php" afterPath="$PROJECT_DIR$/Tests/Entity/LinkTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Event/Subscriber/LoadMetadataSubscriber.php" afterPath="$PROJECT_DIR$/Event/Subscriber/LoadMetadataSubscriber.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine/Option.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine/Option.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine-model/Option.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine-model/Option.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Entity/Option.php" afterPath="$PROJECT_DIR$/Entity/Option.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Option.php" afterPath="$PROJECT_DIR$/Model/Option.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Twig/Extension/OptionExtension.php" afterPath="$PROJECT_DIR$/Twig/Extension/OptionExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Twig/Extension/OptionExtensionTest.php" afterPath="$PROJECT_DIR$/Tests/Twig/Extension/OptionExtensionTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/OptionManager.php" afterPath="$PROJECT_DIR$/Manager/OptionManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Manager/OptionManagerTest.php" afterPath="$PROJECT_DIR$/Tests/Manager/OptionManagerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/OptionRepository.php" afterPath="$PROJECT_DIR$/Repository/OptionRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Entity/OptionTest.php" afterPath="$PROJECT_DIR$/Tests/Entity/OptionTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine/Post.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine/Post.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine-model/Post.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine-model/Post.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Entity/Post.php" afterPath="$PROJECT_DIR$/Entity/Post.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Post.php" afterPath="$PROJECT_DIR$/Model/Post.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Twig/Extension/PostExtension.php" afterPath="$PROJECT_DIR$/Twig/Extension/PostExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Twig/Extension/PostExtensionTest.php" afterPath="$PROJECT_DIR$/Tests/Twig/Extension/PostExtensionTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/PostManager.php" afterPath="$PROJECT_DIR$/Manager/PostManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine/PostMeta.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine/PostMeta.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine-model/PostMeta.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine-model/PostMeta.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Entity/PostMeta.php" afterPath="$PROJECT_DIR$/Entity/PostMeta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/PostMeta.php" afterPath="$PROJECT_DIR$/Model/PostMeta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Twig/Extension/PostMetaExtension.php" afterPath="$PROJECT_DIR$/Twig/Extension/PostMetaExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Twig/Extension/PostMetaExtensionTest.php" afterPath="$PROJECT_DIR$/Tests/Twig/Extension/PostMetaExtensionTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/PostMetaManager.php" afterPath="$PROJECT_DIR$/Manager/PostMetaManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Manager/PostMetaManagerTest.php" afterPath="$PROJECT_DIR$/Tests/Manager/PostMetaManagerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/PostMetaRepository.php" afterPath="$PROJECT_DIR$/Repository/PostMetaRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Entity/PostMetaTest.php" afterPath="$PROJECT_DIR$/Tests/Entity/PostMetaTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/PostRepository.php" afterPath="$PROJECT_DIR$/Repository/PostRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Entity/PostTest.php" afterPath="$PROJECT_DIR$/Tests/Entity/PostTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DependencyInjection/Compiler/RegisterMappingsPass.php" afterPath="$PROJECT_DIR$/DependencyInjection/Compiler/RegisterMappingsPass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Subscriber/TablePrefixSubscriber.php" afterPath="$PROJECT_DIR$/Subscriber/TablePrefixSubscriber.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine/Term.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine/Term.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine-model/Term.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine-model/Term.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Entity/Term.php" afterPath="$PROJECT_DIR$/Entity/Term.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Term.php" afterPath="$PROJECT_DIR$/Model/Term.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/TermManager.php" afterPath="$PROJECT_DIR$/Manager/TermManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine/TermRelationships.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine/TermRelationships.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine-model/TermRelationships.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine-model/TermRelationships.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Entity/TermRelationships.php" afterPath="$PROJECT_DIR$/Entity/TermRelationships.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/TermRelationships.php" afterPath="$PROJECT_DIR$/Model/TermRelationships.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/TermRelationshipsManager.php" afterPath="$PROJECT_DIR$/Manager/TermRelationshipsManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/TermRelationshipsRepository.php" afterPath="$PROJECT_DIR$/Repository/TermRelationshipsRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Entity/TermRelationshipsTest.php" afterPath="$PROJECT_DIR$/Tests/Entity/TermRelationshipsTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/TermRepository.php" afterPath="$PROJECT_DIR$/Repository/TermRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine/TermTaxonomy.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine/TermTaxonomy.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine-model/TermTaxonomy.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine-model/TermTaxonomy.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Entity/TermTaxonomy.php" afterPath="$PROJECT_DIR$/Entity/TermTaxonomy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/TermTaxonomy.php" afterPath="$PROJECT_DIR$/Model/TermTaxonomy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Twig/Extension/TermTaxonomyExtension.php" afterPath="$PROJECT_DIR$/Twig/Extension/TermTaxonomyExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/TermTaxonomyManager.php" afterPath="$PROJECT_DIR$/Manager/TermTaxonomyManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/TermTaxonomyRepository.php" afterPath="$PROJECT_DIR$/Repository/TermTaxonomyRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Entity/TermTaxonomyTest.php" afterPath="$PROJECT_DIR$/Tests/Entity/TermTaxonomyTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Entity/TermTest.php" afterPath="$PROJECT_DIR$/Tests/Entity/TermTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Twig/Extension/ThemeExtension.php" afterPath="$PROJECT_DIR$/Twig/Extension/ThemeExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Twig/Extension/ThemeExtensionTest.php" afterPath="$PROJECT_DIR$/Tests/Twig/Extension/ThemeExtensionTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine/User.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine/User.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine-model/User.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine-model/User.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Entity/User.php" afterPath="$PROJECT_DIR$/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/User.php" afterPath="$PROJECT_DIR$/Model/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Event/Hook/UserHookListener.php" afterPath="$PROJECT_DIR$/Event/Hook/UserHookListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Event/Hook/UserHookListenerTest.php" afterPath="$PROJECT_DIR$/Tests/Event/Hook/UserHookListenerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/UserManager.php" afterPath="$PROJECT_DIR$/Manager/UserManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine/UserMeta.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine/UserMeta.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/doctrine-model/UserMeta.orm.xml" afterPath="$PROJECT_DIR$/Resources/config/doctrine-model/UserMeta.orm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Entity/UserMeta.php" afterPath="$PROJECT_DIR$/Entity/UserMeta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/UserMeta.php" afterPath="$PROJECT_DIR$/Model/UserMeta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manager/UserMetaManager.php" afterPath="$PROJECT_DIR$/Manager/UserMetaManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/UserMetaRepository.php" afterPath="$PROJECT_DIR$/Repository/UserMetaRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Entity/UserMetaTest.php" afterPath="$PROJECT_DIR$/Tests/Entity/UserMetaTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/UserRepository.php" afterPath="$PROJECT_DIR$/Repository/UserRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Entity/UserTest.php" afterPath="$PROJECT_DIR$/Tests/Entity/UserTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Security/WordPressEntryPointTest.php" afterPath="$PROJECT_DIR$/Tests/Security/WordPressEntryPointTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wordpress/Wordpress.php" afterPath="$PROJECT_DIR$/Wordpress/Wordpress.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/WordpressContentInterface.php" afterPath="$PROJECT_DIR$/Model/WordpressContentInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/WordpressController.php" afterPath="$PROJECT_DIR$/Controller/WordpressController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Controller/WordpressControllerTest.php" afterPath="$PROJECT_DIR$/Tests/Controller/WordpressControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/WordpressEntityInterface.php" afterPath="$PROJECT_DIR$/Model/WordpressEntityInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Security/WordpressEntryPoint.php" afterPath="$PROJECT_DIR$/Security/WordpressEntryPoint.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Event/WordpressEvent.php" afterPath="$PROJECT_DIR$/Event/WordpressEvent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Event/WordpressEventTest.php" afterPath="$PROJECT_DIR$/Tests/Event/WordpressEventTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Listener/WordpressRequestListener.php" afterPath="$PROJECT_DIR$/Listener/WordpressRequestListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Listener/WordpressRequestListenerTest.php" afterPath="$PROJECT_DIR$/Tests/Listener/WordpressRequestListenerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wordpress/WordpressResponse.php" afterPath="$PROJECT_DIR$/Wordpress/WordpressResponse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Event/Subscriber/WordpressResponseSubscriber.php" afterPath="$PROJECT_DIR$/Event/Subscriber/WordpressResponseSubscriber.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Event/Subscriber/WordpressResponseSubscriberTest.php" afterPath="$PROJECT_DIR$/Tests/Event/Subscriber/WordpressResponseSubscriberTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Wordpress/WordpressTest.php" afterPath="$PROJECT_DIR$/Tests/Wordpress/WordpressTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/autoload.php.dist" afterPath="$PROJECT_DIR$/Tests/autoload.php.dist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/bootstrap.php" afterPath="$PROJECT_DIR$/Tests/bootstrap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/hooks.xml" afterPath="$PROJECT_DIR$/Resources/config/hooks.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/i18n.xml" afterPath="$PROJECT_DIR$/Resources/config/i18n.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/listener.xml" afterPath="$PROJECT_DIR$/Resources/config/listener.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/manager.xml" afterPath="$PROJECT_DIR$/Resources/config/manager.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml.dist" afterPath="$PROJECT_DIR$/phpunit.xml.dist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/routing.xml" afterPath="$PROJECT_DIR$/Resources/config/routing.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/services.xml" afterPath="$PROJECT_DIR$/Resources/config/services.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/config/twig.xml" afterPath="$PROJECT_DIR$/Resources/config/twig.xml" />
+    </list>
+    <ignored path="ParenthesisWPBundle.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ParenthesisWPBundle" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="bootstrap.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6666667">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentExtension.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Twig/Extension/CommentExtension.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6666667">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OptionExtension.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Twig/Extension/OptionExtension.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6666667">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostExtension.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Twig/Extension/PostExtension.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6666667">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostMetaExtension.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Twig/Extension/PostMetaExtension.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6666667">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TermTaxonomyExtension.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Twig/Extension/TermTaxonomyExtension.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6666667">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThemeExtension.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Twig/Extension/ThemeExtension.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6666667">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Wordpress.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Wordpress/Wordpress.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6666667">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WordpressResponse.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Wordpress/WordpressResponse.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6666667">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.033333335">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Model/WordpressContentInterface.php" />
+        <option value="$PROJECT_DIR$/Model/WordpressEntityInterface.php" />
+        <option value="$PROJECT_DIR$/ParenthesisWPBundle.php" />
+        <option value="$PROJECT_DIR$/Repository/CommentMetaRepository.php" />
+        <option value="$PROJECT_DIR$/Repository/CommentRepository.php" />
+        <option value="$PROJECT_DIR$/Repository/LinkRepository.php" />
+        <option value="$PROJECT_DIR$/Repository/OptionRepository.php" />
+        <option value="$PROJECT_DIR$/Repository/PostMetaRepository.php" />
+        <option value="$PROJECT_DIR$/Repository/PostRepository.php" />
+        <option value="$PROJECT_DIR$/Repository/TermRelationshipsRepository.php" />
+        <option value="$PROJECT_DIR$/Repository/TermRepository.php" />
+        <option value="$PROJECT_DIR$/Repository/TermTaxonomyRepository.php" />
+        <option value="$PROJECT_DIR$/Repository/UserMetaRepository.php" />
+        <option value="$PROJECT_DIR$/Repository/UserRepository.php" />
+        <option value="$PROJECT_DIR$/Security/WordpressEntryPoint.php" />
+        <option value="$PROJECT_DIR$/Subscriber/TablePrefixSubscriber.php" />
+        <option value="$PROJECT_DIR$/Tests/Controller/WordpressControllerTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Entity/CommentMetaTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Entity/CommentTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Entity/LinkTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Entity/OptionTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Entity/PostMetaTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Entity/PostTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Entity/TermRelationshipsTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Entity/TermTaxonomyTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Entity/TermTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Entity/UserMetaTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Entity/UserTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Event/Hook/UserHookListenerTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Event/Subscriber/I18n/I18nSubscriberTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Event/Subscriber/WordpressResponseSubscriberTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Event/WordpressEventTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Listener/WordpressRequestListenerTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Manager/OptionManagerTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Manager/PostMetaManagerTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Security/WordPressEntryPointTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Twig/Extension/OptionExtensionTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Twig/Extension/PostExtensionTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Twig/Extension/PostMetaExtensionTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Twig/Extension/ThemeExtensionTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Wordpress/WordpressTest.php" />
+        <option value="$PROJECT_DIR$/Tests/autoload.php.dist" />
+        <option value="$PROJECT_DIR$/Tests/bootstrap.php" />
+        <option value="$PROJECT_DIR$/Twig/Extension/CommentExtension.php" />
+        <option value="$PROJECT_DIR$/Twig/Extension/OptionExtension.php" />
+        <option value="$PROJECT_DIR$/Twig/Extension/PostExtension.php" />
+        <option value="$PROJECT_DIR$/Twig/Extension/PostMetaExtension.php" />
+        <option value="$PROJECT_DIR$/Twig/Extension/TermTaxonomyExtension.php" />
+        <option value="$PROJECT_DIR$/Twig/Extension/ThemeExtension.php" />
+        <option value="$PROJECT_DIR$/Wordpress/Wordpress.php" />
+        <option value="$PROJECT_DIR$/Wordpress/WordpressResponse.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
+    <option name="width" value="1368" />
+    <option name="height" value="743" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParenthesisWPBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParenthesisWPBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParenthesisWPBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParenthesisWPBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParenthesisWPBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7b24aba-e32c-43ff-a561-6851e51cdd4c" name="Default" comment="" />
+      <created>1454540591172</created>
+      <option name="number" value="Default" />
+      <updated>1454540591172</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6510067" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Model/WordpressEntityInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParenthesisWPBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding>
+            <element signature="e#263#338#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repository/CommentMetaRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repository/CommentRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repository/LinkRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repository/OptionRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repository/PostMetaRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repository/PostRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repository/TermRelationshipsRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repository/TermRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repository/TermTaxonomyRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repository/UserMetaRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repository/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Security/WordpressEntryPoint.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Subscriber/TablePrefixSubscriber.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Controller/WordpressControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Entity/CommentMetaTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Entity/CommentTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Entity/LinkTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Entity/OptionTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Entity/PostMetaTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Entity/PostTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Entity/TermRelationshipsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Entity/TermTaxonomyTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Entity/TermTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Entity/UserMetaTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Entity/UserTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Event/Hook/UserHookListenerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Event/Subscriber/I18n/I18nSubscriberTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Event/Subscriber/WordpressResponseSubscriberTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding>
+            <element signature="e#286#356#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Event/WordpressEventTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Listener/WordpressRequestListenerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding>
+            <element signature="e#278#315#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Manager/OptionManagerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding>
+            <element signature="e#277#308#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Manager/PostMetaManagerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding>
+            <element signature="e#277#308#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Security/WordPressEntryPointTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding>
+            <element signature="e#278#332#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Twig/Extension/OptionExtensionTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Twig/Extension/PostExtensionTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Twig/Extension/PostMetaExtensionTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Twig/Extension/ThemeExtensionTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Wordpress/WordpressTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/autoload.php.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Twig/Extension/CommentExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Twig/Extension/OptionExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Twig/Extension/PostExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Twig/Extension/PostMetaExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Twig/Extension/TermTaxonomyExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Twig/Extension/ThemeExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wordpress/Wordpress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wordpress/WordpressResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.033333335">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

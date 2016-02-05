@@ -1,8 +1,8 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -15,9 +15,9 @@ namespace {
     }
 }
 
-namespace Ekino\WordpressBundle\Tests\Twig\Extension {
+namespace Parenthesis\WPBundle\Tests\Twig\Extension {
 
-    use Ekino\WordpressBundle\Twig\Extension\PostMetaExtension;
+    use Parenthesis\WPBundle\Twig\Extension\PostMetaExtension;
 
     /**
      * Class PostMetaExtensionTest.
@@ -42,7 +42,7 @@ namespace Ekino\WordpressBundle\Tests\Twig\Extension {
                 $this->markTestSkipped('Twig is not enabled');
             }
 
-            $this->postMetaManager = $this->getMockBuilder('Ekino\WordpressBundle\Manager\PostMetaManager')->disableOriginalConstructor()->getMock();
+            $this->postMetaManager = $this->getMockBuilder('Parenthesis\WPBundle\Manager\PostMetaManager')->disableOriginalConstructor()->getMock();
             $this->extension = new PostMetaExtension($this->postMetaManager);
         }
 
@@ -51,7 +51,7 @@ namespace Ekino\WordpressBundle\Tests\Twig\Extension {
          */
         public function testGetName()
         {
-            $this->assertEquals('ekino_wordpress_post_meta', $this->extension->getName());
+            $this->assertEquals('parenthesis_wp_post_meta', $this->extension->getName());
         }
 
         /**
@@ -67,7 +67,7 @@ namespace Ekino\WordpressBundle\Tests\Twig\Extension {
          */
         public function testGetPostMeta()
         {
-            $postMeta = $this->getMock('Ekino\WordpressBundle\Entity\PostMeta');
+            $postMeta = $this->getMock('Parenthesis\WPBundle\Entity\PostMeta');
             $this->postMetaManager->expects($this->once())
                 ->method('getPostMeta')
                 ->with($this->equalTo(12), $this->equalTo('meta-test'), $this->equalTo(true))

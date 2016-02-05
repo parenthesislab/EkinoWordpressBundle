@@ -1,7 +1,7 @@
-EkinoWordpressBundle
+ParenthesisWPBundle
 ====================
 
-[![Build Status](https://secure.travis-ci.org/ekino/EkinoWordpressBundle.png?branch=master)](http://travis-ci.org/ekino/EkinoWordpressBundle) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/e842da81-16e2-47ee-9966-5112bbe1ab9c/mini.png)](https://insight.sensiolabs.com/projects/e842da81-16e2-47ee-9966-5112bbe1ab9c)
+[![Build Status](https://secure.travis-ci.org/ekino/ParenthesisWPBundle.png?branch=master)](http://travis-ci.org/ekino/ParenthesisWPBundle) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/e842da81-16e2-47ee-9966-5112bbe1ab9c/mini.png)](https://insight.sensiolabs.com/projects/e842da81-16e2-47ee-9966-5112bbe1ab9c)
 
 This bundle is used to bring some Symfony services into Wordpress and manipulates Wordpress using Symfony.
 
@@ -44,7 +44,7 @@ Then, add the bundle into `symfony/app/AppKernel.php`:
     {
         $bundles = array(
             ...
-            new Ekino\WordpressBundle\EkinoWordpressBundle(),
+            new Parenthesis\WPBundle\ParenthesisWPBundle(),
         );
 
         ...
@@ -57,14 +57,14 @@ Add the WordpressBundle routing file in your `symfony/app/config/routing.yml`, a
 
 ```yml
 ...
-ekino_wordpress:
-    resource: "@EkinoWordpressBundle/Resources/config/routing.xml"
+parenthesis_wp:
+    resource: "@ParenthesisWPBundle/Resources/config/routing.xml"
 ```
 
 Optionally, you can specify the following options in your `app/config.yml`:
 
 ```yml
-ekino_wordpress:
+parenthesis_wp:
     globals: # If you have some custom global variables that WordPress needs
         - wp_global_variable_1
         - wp_global_variable_2
@@ -83,14 +83,14 @@ Also optionally, if you want to use `UserHook` to authenticate on Symfony, you s
 security:
     providers:
         main:
-            entity: { class: Ekino\WordpressBundle\Entity\User, property: login }
+            entity: { class: Parenthesis\WPBundle\Entity\User, property: login }
 
     # Example firewall for an area within a Symfony application protected by a WordPress login
     firewalls:
         secured_area:
             pattern:    ^/admin
-            access_denied_handler: ekino.wordpress.security.entry_point
-            entry_point: ekino.wordpress.security.entry_point
+            access_denied_handler: parenthesis.wp.security.entry_point
+            entry_point: parenthesis.wp.security.entry_point
             anonymous: ~
 
     access_control:
@@ -218,24 +218,24 @@ You can call Wordpress table managers in Symfony by calling the following servic
 
 *Service identifier* | *Type*
 --- | ---
-ekino.wordpress.manager.comment | Wordpress comment manager
-ekino.wordpress.manager.comment_meta | Wordpress comment metas manager
-ekino.wordpress.manager.link | Wordpress link manager
-ekino.wordpress.manager.option | Wordpress option manager
-ekino.wordpress.manager.post | Wordpress post manager
-ekino.wordpress.manager.post_meta | Wordpress post metas manager
-ekino.wordpress.manager.term | Wordpress term manager
-ekino.wordpress.manager.term_relationships | Wordpress term relationships manager
-ekino.wordpress.manager.term_taxonomy | Wordpress taxonomy manager
-ekino.wordpress.manager.user | Wordpress user manager
-ekino.wordpress.manager.user_meta | Wordpress user metas manager
+parenthesis.wp.manager.comment | Wordpress comment manager
+parenthesis.wp.manager.comment_meta | Wordpress comment metas manager
+parenthesis.wp.manager.link | Wordpress link manager
+parenthesis.wp.manager.option | Wordpress option manager
+parenthesis.wp.manager.post | Wordpress post manager
+parenthesis.wp.manager.post_meta | Wordpress post metas manager
+parenthesis.wp.manager.term | Wordpress term manager
+parenthesis.wp.manager.term_relationships | Wordpress term relationships manager
+parenthesis.wp.manager.term_taxonomy | Wordpress taxonomy manager
+parenthesis.wp.manager.user | Wordpress user manager
+parenthesis.wp.manager.user_meta | Wordpress user metas manager
 
 So in custom Symfony controllers, you can create / update / delete data in Wordpress database, like that:
 
 ```php
 # Here an example that sets user #2 as author for post #1
-$postManager = $this->get('ekino.wordpress.manager.post');
-$userManager = $this->get('ekino.wordpress.manager.user');
+$postManager = $this->get('parenthesis.wp.manager.post');
+$userManager = $this->get('parenthesis.wp.manager.user');
 
 $user = $userManager->find(2);
 
@@ -261,27 +261,27 @@ $service = symfony('my.custom.symfony.service');
 ## Entities
 For every Wordpress entities, you can override the default classes. To do so, just add the following configuration in your `config.yml` (for `Post` entities):
 ```yaml
-ekino_wordpress:
+parenthesis_wp:
     services:
         post:
             class: MyApp\AppBundle\Entity\Post
 ```
-In order to avoid further troubles when creating a new instance (for example), remember to always use the manager to create a new entity (`$container->get('ekino.wordpress.manager.post')->create()`).
+In order to avoid further troubles when creating a new instance (for example), remember to always use the manager to create a new entity (`$container->get('parenthesis.wp.manager.post')->create()`).
 
 ## Managers
 You can use your own managers too. To customize it, register yours as services — should be marked as privates — as follow :
 ```yaml
-ekino_wordpress:
+parenthesis_wp:
     services:
         comment:
             manager: my_custom_comment_service
 ```
-Your manager will now be reachable using the usual command, IE from a controller : `$this->get('ekino.wordpress.manager.comment')`
+Your manager will now be reachable using the usual command, IE from a controller : `$this->get('parenthesis.wp.manager.comment')`
 
 ## Repositories
 Implementing your custom repository classes is as simple as follow :
 ```yaml
-ekino_wordpress:
+parenthesis_wp:
     services:
         comment_meta:
             repository_class: MyApp\MyBundle\Repository\ORM\CustomCommentMetaRepository
@@ -290,11 +290,11 @@ ekino_wordpress:
 # Extra
 ## Enable cross application I18n support
 
-If you already have a wordpress plugin to handle I18n, EkinoWordpressBundle allow to persist language toggle between Symfony and wordpress.
+If you already have a wordpress plugin to handle I18n, ParenthesisWPBundle allow to persist language toggle between Symfony and wordpress.
 To do so, just grab the cookie name from the wordpress plugin used and provide its name in the configuration as follow :
 
 ```yml
-ekino_wordpress:
+parenthesis_wp:
     i18n_cookie_name: pll_language # This value is the one used in "polylang" WP plugin
 ```
 
@@ -331,7 +331,7 @@ class LanguageController extends Controller
      */
     protected function getWpCookieName()
     {
-        return $this->container->getParameter('ekino.wordpress.i18n_cookie_name');
+        return $this->container->getParameter('parenthesis.wp.i18n_cookie_name');
     }
 }
 ```

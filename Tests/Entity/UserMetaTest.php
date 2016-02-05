@@ -1,17 +1,17 @@
 <?php
 /*
- * This file is part of the Ekino Wordpress package.
+ * This file is part of the Parenthesis Wordpress package.
  *
- * (c) 2013 Ekino
+ * (c) 2013 Parenthesis
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Ekino\WordpressBundle\Tests\Entity;
+namespace Parenthesis\WPBundle\Tests\Entity;
 
-use Ekino\WordpressBundle\Entity\User;
-use Ekino\WordpressBundle\Entity\UserMeta;
+use Parenthesis\WPBundle\Entity\User;
+use Parenthesis\WPBundle\Entity\UserMeta;
 
 /**
  * Class UserMetaTest.
