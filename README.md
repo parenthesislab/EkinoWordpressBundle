@@ -23,18 +23,24 @@ Install your Wordpress project and/or get into your root project directory and i
 
 `php composer.phar create-project symfony/framework-standard-edition symfony/`
 
-### 2) Install ekino/wordpress-bundle into Symfony's project
+### 2) Install parenthesis/wp-bundle into Symfony's project
 
 After, edit `symfony/composer.json` file to add this bundle package:
 
 ```yml
+"repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/parenthesislab/ParenthesisWPBundle"
+        }
+    ],
 "require": {
     ...
-    "ekino/wordpress-bundle": "dev-master"
+    "parenthesis/wp-bundle": "dev-master"
 },
 ```
 
-Run `php composer.phar update ekino/wordpress-bundle`
+Run `php composer.phar update parenthesis/wp-bundle`
 
 Then, add the bundle into `symfony/app/AppKernel.php`:
 
